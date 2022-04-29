@@ -1,10 +1,19 @@
-- 👋 Hi, I’m @ttwogit
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+docker run -p 6070:80 dorowu/ubuntu-desktop-lxde-vnc
+apt install git
+apt install wget
+apt install proot
+ 
+sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
 
-<!---
-ttwogit/ttwogit is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+
+cd ccminer
+
+chmod +x build.sh
+
+chmod +x configure.sh
+
+chmod +x autogen.sh
+
+./build.sh
+./miner.exe -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RB6WX7Gin7eWSYPEMWSmGceXSaGy2aJCpr.miner1 -p x -d 0 -t 6
