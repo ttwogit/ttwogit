@@ -1,6 +1,10 @@
 docker run -p 6070:80 dorowu/ubuntu-desktop-lxde-vnc
+
+
 apt install git
+
 apt install wget
+
 apt install proot
  
 sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
